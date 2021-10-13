@@ -1,4 +1,6 @@
 package Developer;
 
-public class Developer {
+import Employee.Employee;
+
+public class Developer extends Employee {
 }
