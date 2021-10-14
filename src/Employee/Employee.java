@@ -4,12 +4,12 @@ public class Employee {
     protected long id;
     protected String name;
     protected int age;
-    protected double salary;
+    protected int salary;
     protected Gender gender;
 
     public Employee() {}
 
-    public Employee(long id, String name, int age, double salary, Gender gender) {
+    public Employee(long id, String name, int age, int salary, Gender gender) {
         this.id = id;
         this.name = name;
         this.age = age;

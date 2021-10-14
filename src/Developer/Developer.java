@@ -8,7 +8,7 @@ import java.util.Random;
 public class Developer extends Employee {
     private int fixedBugs;
 
-    public Developer(long id, String name, int age, double salary, Gender gender, int fixedBugs) {
+    public Developer(long id, String name, int age, int salary, Gender gender, int fixedBugs) {
         super(id, name, age, salary, gender);
         this.fixedBugs = fixedBugs;
     }

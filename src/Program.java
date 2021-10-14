@@ -1,7 +1,7 @@
-import Test.TestEmployee;
+import Test.TestEmployeeService;
 
 public class Program {
     public static void main(String[] args) {
-        new TestEmployee();
+        new TestEmployeeService();
     }
 }

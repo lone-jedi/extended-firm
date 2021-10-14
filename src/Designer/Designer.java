@@ -5,9 +5,9 @@ import Employee.Gender;
 
 public class Designer extends Employee {
     private int workedDays;
-    private double rate;
+    private int rate;
 
-    public Designer(long id, String name, int age, double salary, Gender gender, int workedDays, double rate) {
+    public Designer(long id, String name, int age, int salary, Gender gender, int workedDays, int rate) {
         super(id, name, age, salary, gender);
         this.workedDays = workedDays;
         this.rate = rate;
