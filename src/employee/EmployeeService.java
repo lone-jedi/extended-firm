@@ -1,4 +1,4 @@
-package Employee;
+package employee;
 
 public class EmployeeService {
     private Employee[] employees;

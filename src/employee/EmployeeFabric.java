@@ -1,14 +1,10 @@
-package Employee;
-
-import Designer.Designer;
-import Developer.Developer;
-import Manager.Manager;
+package employee;
 
 import java.util.Random;
 
-import Manager.ManagerFabric;
-import Developer.DeveloperFabric;
-import Designer.DesignerFabric;
+import manager.ManagerFabric;
+import developer.DeveloperFabric;
+import designer.DesignerFabric;
 
 public class EmployeeFabric {
     static private int id = 1;

@@ -1,8 +1,8 @@
-import Employee.Employee;
-import Employee.EmployeeFabric;
-import Employee.EmployeeService;
+import employee.Employee;
+import employee.EmployeeFabric;
+import employee.EmployeeService;
 
-import Test.TestEmployeeService;
+import test.TestEmployeeService;
 
 public class Program {
     public static void main(String[] args) {

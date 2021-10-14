@@ -1,4 +1,4 @@
-package Employee;
+package employee;
 
 public enum Gender {
     MALE,

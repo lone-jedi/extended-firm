@@ -1,6 +1,6 @@
-package Test;
+package test;
 
-import Employee.Employee;
+import employee.Employee;
 
 public class Test {
     public void printPassed(String testId) {

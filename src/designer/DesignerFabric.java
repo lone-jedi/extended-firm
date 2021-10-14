@@ -1,11 +1,9 @@
-package Designer;
+package designer;
 
 import java.util.Random;
 
-import Developer.Developer;
-
-import Employee.Employee;
-import Employee.EmployeeFabric;
+import employee.Employee;
+import employee.EmployeeFabric;
 
 public class DesignerFabric {
     public Designer generate() {

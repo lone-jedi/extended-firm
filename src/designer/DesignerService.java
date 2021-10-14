@@ -1,4 +1,4 @@
-package Designer;
+package designer;
 
 public class DesignerService {
 }

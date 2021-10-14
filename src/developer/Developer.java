@@ -1,7 +1,7 @@
-package Developer;
+package developer;
 
-import Employee.Employee;
-import Employee.Gender;
+import employee.Employee;
+import employee.Gender;
 
 import java.util.Random;
 

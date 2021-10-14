@@ -1,7 +1,7 @@
-package Manager;
+package manager;
 
-import Employee.Employee;
-import Employee.Gender;
+import employee.Employee;
+import employee.Gender;
 
 public class Manager extends Employee {
     public Manager(long id, String name, int age, int salary, Gender gender) {

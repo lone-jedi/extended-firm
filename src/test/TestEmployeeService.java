@@ -1,12 +1,11 @@
-package Test;
+package test;
 
-import Designer.Designer;
-import Developer.Developer;
-import Employee.Employee;
-import Manager.Manager;
-import Employee.Gender;
-import Employee.EmployeeService;
-import Employee.EmployeeFabric;
+import designer.Designer;
+import developer.Developer;
+import employee.Employee;
+import manager.Manager;
+import employee.Gender;
+import employee.EmployeeService;
 
 public class TestEmployeeService extends Test {
     private EmployeeService employeeService;

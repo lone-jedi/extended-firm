@@ -1,9 +1,6 @@
-package Manager;
+package manager;
 
-import Designer.Designer;
-import Developer.Developer;
-import Employee.Employee;
-import Employee.EmployeeFabric;
+import employee.EmployeeFabric;
 
 public class ManagerFabric {
     public Manager generate() {

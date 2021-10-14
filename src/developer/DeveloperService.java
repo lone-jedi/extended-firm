@@ -1,4 +1,4 @@
-package Developer;
+package developer;
 
 public class DeveloperService {
 }

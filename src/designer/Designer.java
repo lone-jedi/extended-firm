@@ -1,7 +1,7 @@
-package Designer;
+package designer;
 
-import Employee.Employee;
-import Employee.Gender;
+import employee.Employee;
+import employee.Gender;
 
 public class Designer extends Employee {
     private int workedDays;
