@@ -12,10 +12,7 @@ public class TestEmployeeService extends Test {
     private EmployeeService employeeService;
 
     public void testEmployeeFabric() {
-        EmployeeFabric employeeFabric = new EmployeeFabric();
-        Employee[] employees = employeeFabric.generate(20);
-        EmployeeService employeeService = new EmployeeService(employees);
-        employeeService.printEmployees();
+
     }
 
     public TestEmployeeService() {
@@ -29,9 +26,6 @@ public class TestEmployeeService extends Test {
 
         employeeService = new EmployeeService(employees);
 
-        // Test printEmployees
-        // employeeService.printEmployees();
-
         testCalculateSalaryAndBonus();
         testGetById();
         testGetByName();
@@ -40,9 +34,6 @@ public class TestEmployeeService extends Test {
         testEdit();
         testAdd();
         testRemove();
-
-        // Test printEmployees
-        // employeeService.printEmployees();
     }
 
     public void testCalculateSalaryAndBonus() {
@@ -72,7 +63,7 @@ public class TestEmployeeService extends Test {
     public void testGetByName() {
         String testId = "TestEmployeeService -> getByName()";
         Employee[] expected = { employeeService.getEmployees()[2] };
-        Employee[] actual   = employeeService.getByName("Alex");
+        Employee[] actual   = employeeService.getByName("Alex").getEmployees();
         assertEquals(testId, expected, actual);
     }
 
@@ -82,7 +73,7 @@ public class TestEmployeeService extends Test {
                                 employeeService.getEmployees()[0],
                                 employeeService.getEmployees()[1]};
 
-        Employee[] actual   = employeeService.sortByName();
+        Employee[] actual   = employeeService.sortByName().getEmployees();
         assertEquals(testId, expected, actual);
     }
 
@@ -92,7 +83,7 @@ public class TestEmployeeService extends Test {
                                 employeeService.getEmployees()[0],
                                 employeeService.getEmployees()[1]};
 
-        Employee[] actual   = employeeService.sortByNameAndSalary();
+        Employee[] actual   = employeeService.sortByNameAndSalary().getEmployees();
         assertEquals(testId, expected, actual);
     }
 

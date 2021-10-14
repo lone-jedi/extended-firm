@@ -35,7 +35,7 @@ public class EmployeeService {
         return null;
     }
 
-    public Employee[] getByName(String name) {
+    public EmployeeService getByName(String name) {
         int numberOfEmployees = 0;
         for (Employee employee : employees) {
             if(employee.getName().equals(name)) {
@@ -52,10 +52,10 @@ public class EmployeeService {
             }
         }
 
-        return employeesByName;
+        return new EmployeeService(employeesByName);
     }
 
-    public Employee[] sortByName() {
+    public EmployeeService sortByName() {
         Employee[] employees = this.employees.clone();
 
         for(int i = 0; i < employees.length; ++i) {
@@ -70,10 +70,10 @@ public class EmployeeService {
             employees[min] = temporary;
         }
 
-        return employees;
+        return new EmployeeService(employees);
     }
 
-    public Employee[] sortByNameAndSalary() {
+    public EmployeeService sortByNameAndSalary() {
         Employee[] employees = this.employees.clone();
 
         for(int i = 0; i < employees.length; ++i) {
@@ -88,7 +88,7 @@ public class EmployeeService {
             employees[min] = temporary;
         }
 
-        return employees;
+        return new EmployeeService(employees);
     }
 
     public Employee edit(Employee to) {

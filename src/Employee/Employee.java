@@ -60,7 +60,7 @@ public class Employee {
 
     public boolean isBigger(Employee compared) {
         if(this.name.equals(compared.getName())) {
-            return this.totalSalary() > compared.totalSalary();
+            return this.getSalary() > compared.getSalary();
         }
         return this.name.compareTo(compared.getName()) > 0;
     }
