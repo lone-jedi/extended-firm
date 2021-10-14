@@ -26,4 +26,30 @@ public class EmployeeService {
     }
 
 
+    public Employee getById(long id) {
+        return null;
+    }
+
+    public Employee[] getByName(String name) {
+        return new Employee[0];
+    }
+
+    public Employee[] sortByName() {
+        return new Employee[0];
+    }
+
+    public Employee[] sortByNameAndSalary() {
+        return new Employee[0];
+    }
+
+    public Employee edit(Employee to) {
+        return null;
+    }
+
+    public void add(Employee employee) {
+    }
+
+    public Employee remove(long id) {
+        return null;
+    }
 }
