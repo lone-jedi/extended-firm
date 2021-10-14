@@ -19,6 +19,9 @@ public class TestEmployeeService extends Test {
 
         employeeService = new EmployeeService(employees);
 
+        // Test printEmployees
+        employeeService.printEmployees();
+
         testCalculateSalaryAndBonus();
         testGetById();
         testGetByName();

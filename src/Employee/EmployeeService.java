@@ -27,29 +27,112 @@ public class EmployeeService {
 
 
     public Employee getById(long id) {
+        for (Employee employee : employees) {
+            if(employee.getId() == id) {
+                return employee;
+            }
+        }
         return null;
     }
 
     public Employee[] getByName(String name) {
-        return new Employee[0];
+        int numberOfEmployees = 0;
+        for (Employee employee : employees) {
+            if(employee.getName().equals(name)) {
+                numberOfEmployees++;
+            }
+        }
+
+        Employee[] employeesByName = new Employee[numberOfEmployees];
+
+        int counter = 0;
+        for (Employee employee : employees) {
+            if(employee.getName().equals(name)) {
+                employeesByName[counter++] = employee;
+            }
+        }
+
+        return employeesByName;
     }
 
     public Employee[] sortByName() {
-        return new Employee[0];
+        Employee[] employees = this.employees.clone();
+
+        for(int i = 0; i < employees.length; ++i) {
+            int min = i;
+            for(int j = i + 1; j < employees.length; ++j) {
+                if(employees[min].getName().compareTo(employees[j].getName()) > 0) {
+                    min = j;
+                }
+            }
+            Employee temporary = employees[i] ;
+            employees[i] = employees[min];
+            employees[min] = temporary;
+        }
+
+        return employees;
     }
 
     public Employee[] sortByNameAndSalary() {
-        return new Employee[0];
+        Employee[] employees = this.employees.clone();
+
+        for(int i = 0; i < employees.length; ++i) {
+            int min = i;
+            for(int j = i + 1; j < employees.length; ++j) {
+                if(employees[min].isBigger(employees[j])) {
+                    min = j;
+                }
+            }
+            Employee temporary = employees[i] ;
+            employees[i] = employees[min];
+            employees[min] = temporary;
+        }
+
+        return employees;
     }
 
     public Employee edit(Employee to) {
+        for (int i = 0; i < employees.length; i++) {
+            if(employees[i].getId() == to.getId()) {
+                Employee from = employees[i];
+                employees[i] = to;
+                return from;
+            }
+        }
+
         return null;
     }
 
     public void add(Employee employee) {
+        Employee[] newEmployees = new Employee[employees.length + 1];
+        for (int i = 0; i < employees.length; i++) {
+            newEmployees[i] = employees[i];
+        }
+
+        newEmployees[employees.length] = employee;
+        employees = newEmployees;
     }
 
     public Employee remove(long id) {
-        return null;
+        Employee[] newEmployees = new Employee[employees.length - 1];
+        Employee deletedEmployee = null;
+        int employeesCounter = 0;
+
+        for (int i = 0; i < employees.length; i++) {
+            if(employees[i].getId() == id) {
+                deletedEmployee = employees[i];
+                continue;
+            }
+
+            if(employeesCounter > newEmployees.length - 1) {
+                return null;
+            }
+
+            newEmployees[employeesCounter++] = employees[i];
+        }
+
+        employees = newEmployees;
+
+        return deletedEmployee;
     }
 }
