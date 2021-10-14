@@ -11,11 +11,31 @@ public class Employee {
         return id;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
     public String getName() {
         return name;
     }
 
     public Employee() {}
+
+    public Employee(Employee employee) {
+        id = employee.getId();
+        name = employee.getName();
+        age = employee.getAge();
+        salary = employee.getSalary();
+        gender = employee.getGender();
+    }
 
     public Employee(long id, String name, int age, int salary, Gender gender) {
         this.id = id;

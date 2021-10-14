@@ -6,11 +6,21 @@ import Employee.Employee;
 import Manager.Manager;
 import Employee.Gender;
 import Employee.EmployeeService;
+import Employee.EmployeeFabric;
 
 public class TestEmployeeService extends Test {
     private EmployeeService employeeService;
 
+    public void testEmployeeFabric() {
+        EmployeeFabric employeeFabric = new EmployeeFabric();
+        Employee[] employees = employeeFabric.generate(20);
+        EmployeeService employeeService = new EmployeeService(employees);
+        employeeService.printEmployees();
+    }
+
     public TestEmployeeService() {
+        testEmployeeFabric();
+
         Employee[] employees = {
                 new Manager(12, "Harry", 31, 700, Gender.MALE),
                 new Designer(2, "Ira", 18, 500, Gender.FEMALE, 10, 5),
@@ -20,7 +30,7 @@ public class TestEmployeeService extends Test {
         employeeService = new EmployeeService(employees);
 
         // Test printEmployees
-        employeeService.printEmployees();
+        // employeeService.printEmployees();
 
         testCalculateSalaryAndBonus();
         testGetById();
@@ -32,7 +42,7 @@ public class TestEmployeeService extends Test {
         testRemove();
 
         // Test printEmployees
-        employeeService.printEmployees();
+        // employeeService.printEmployees();
     }
 
     public void testCalculateSalaryAndBonus() {

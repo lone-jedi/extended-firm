@@ -8,6 +8,10 @@ public class Manager extends Employee {
         super(id, name, age, salary, gender);
     }
 
+    public Manager(Employee employee) {
+        super(employee);
+    }
+
     @Override
     public String toString() {
         return "Manager: " + super.toString();

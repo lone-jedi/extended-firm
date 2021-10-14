@@ -13,6 +13,11 @@ public class Developer extends Employee {
         this.fixedBugs = fixedBugs;
     }
 
+    public Developer(Employee employee, int fixedBugs) {
+        super(employee);
+        this.fixedBugs = fixedBugs;
+    }
+
     @Override
     public double totalSalary() {
         return (salary + fixedBugs * 20) *

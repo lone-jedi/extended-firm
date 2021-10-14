@@ -13,6 +13,12 @@ public class Designer extends Employee {
         this.rate = rate;
     }
 
+    public Designer(Employee employee, int workedDays, int rate) {
+        super(employee);
+        this.workedDays = workedDays;
+        this.rate = rate;
+    }
+
     @Override
     public double totalSalary() {
         return salary + rate * workedDays;
@@ -22,7 +28,7 @@ public class Designer extends Employee {
     public String toString() {
         return "Designer: " +
                 super.toString() +
-                "workedDays=" + workedDays +
+                ", workedDays=" + workedDays +
                 ", rate=" + rate;
     }
 }
