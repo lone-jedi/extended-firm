@@ -6,8 +6,10 @@ import com.luxcampus.employee.EmployeeService;
 
 import com.luxcampus.test.TestEmployeeService;
 
+import java.io.IOException;
+
 public class Program {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         EmployeeFabric employeeFabric = new EmployeeFabric();
         Employee[] employees = employeeFabric.generate(20);
         EmployeeService employeeService = new EmployeeService(employees);
@@ -25,5 +27,6 @@ public class Program {
 
         new TestEmployeeService();
 
+        System.in.read();
     }
 }
