@@ -26,7 +26,7 @@ public class Designer extends Employee {
 
     @Override
     public String toString() {
-        return "Designer: " +
+        return "Designer:\t" +
                 super.toString() +
                 ", workedDays=" + workedDays +
                 ", rate=" + rate;

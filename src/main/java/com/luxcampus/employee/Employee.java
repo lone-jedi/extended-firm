@@ -51,11 +51,8 @@ public class Employee {
 
     @Override
     public String toString() {
-        return  "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", salary=" + salary +
-                ", gender=" + gender;
+        return String.format("id=%3d, name=%7s, age=%3d, salary=%5d, gender=%6s",
+                id, name, age, salary, gender);
     }
 
     public boolean isBigger(Employee compared) {
