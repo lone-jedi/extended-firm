@@ -1,7 +1,7 @@
-package manager;
+package com.luxcampus.manager;
 
-import employee.Employee;
-import employee.Gender;
+import com.luxcampus.employee.Employee;
+import com.luxcampus.employee.Gender;
 
 public class Manager extends Employee {
     public Manager(long id, String name, int age, int salary, Gender gender) {

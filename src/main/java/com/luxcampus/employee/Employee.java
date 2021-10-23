@@ -1,4 +1,4 @@
-package employee;
+package com.luxcampus.employee;
 
 public class Employee {
     protected long id;

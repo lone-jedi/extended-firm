@@ -1,7 +1,7 @@
-package designer;
+package com.luxcampus.designer;
 
-import employee.Employee;
-import employee.Gender;
+import com.luxcampus.employee.Employee;
+import com.luxcampus.employee.Gender;
 
 public class Designer extends Employee {
     private int workedDays;

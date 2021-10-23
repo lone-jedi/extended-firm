@@ -1,11 +1,11 @@
-package test;
+package com.luxcampus.test;
 
-import designer.Designer;
-import developer.Developer;
-import employee.Employee;
-import manager.Manager;
-import employee.Gender;
-import employee.EmployeeService;
+import com.luxcampus.designer.Designer;
+import com.luxcampus.developer.Developer;
+import com.luxcampus.employee.Employee;
+import com.luxcampus.manager.Manager;
+import com.luxcampus.employee.Gender;
+import com.luxcampus.employee.EmployeeService;
 
 public class TestEmployeeService extends Test {
     private EmployeeService employeeService;

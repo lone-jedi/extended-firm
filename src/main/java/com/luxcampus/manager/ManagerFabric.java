@@ -1,6 +1,6 @@
-package manager;
+package com.luxcampus.manager;
 
-import employee.EmployeeFabric;
+import com.luxcampus.employee.EmployeeFabric;
 
 public class ManagerFabric {
     public Manager generate() {

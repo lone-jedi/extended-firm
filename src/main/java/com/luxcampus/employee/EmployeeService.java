@@ -1,4 +1,4 @@
-package employee;
+package com.luxcampus.employee;
 
 public class EmployeeService {
     private Employee[] employees;

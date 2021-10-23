@@ -1,10 +1,10 @@
-package employee;
+package com.luxcampus.employee;
 
 import java.util.Random;
 
-import manager.ManagerFabric;
-import developer.DeveloperFabric;
-import designer.DesignerFabric;
+import com.luxcampus.manager.ManagerFabric;
+import com.luxcampus.developer.DeveloperFabric;
+import com.luxcampus.designer.DesignerFabric;
 
 public class EmployeeFabric {
     static private int id = 1;

@@ -1,6 +1,6 @@
-package test;
+package com.luxcampus.test;
 
-import employee.Employee;
+import com.luxcampus.employee.Employee;
 
 public class Test {
     public void printPassed(String testId) {

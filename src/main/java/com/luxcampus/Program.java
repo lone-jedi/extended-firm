@@ -1,8 +1,10 @@
-import employee.Employee;
-import employee.EmployeeFabric;
-import employee.EmployeeService;
+package com.luxcampus;
 
-import test.TestEmployeeService;
+import com.luxcampus.employee.Employee;
+import com.luxcampus.employee.EmployeeFabric;
+import com.luxcampus.employee.EmployeeService;
+
+import com.luxcampus.test.TestEmployeeService;
 
 public class Program {
     public static void main(String[] args) {

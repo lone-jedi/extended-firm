@@ -1,9 +1,9 @@
-package designer;
+package com.luxcampus.designer;
 
 import java.util.Random;
 
-import employee.Employee;
-import employee.EmployeeFabric;
+import com.luxcampus.employee.Employee;
+import com.luxcampus.employee.EmployeeFabric;
 
 public class DesignerFabric {
     public Designer generate() {

@@ -1,7 +1,7 @@
-package developer;
+package com.luxcampus.developer;
 
-import employee.Employee;
-import employee.EmployeeFabric;
+import com.luxcampus.employee.Employee;
+import com.luxcampus.employee.EmployeeFabric;
 
 import java.util.Random;
 
